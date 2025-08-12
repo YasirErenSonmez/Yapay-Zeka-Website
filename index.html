@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Site Arayüzü</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Basit stil örneği */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #0077cc;
+      color: rgb(255, 251, 0);
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    nav .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav .nav-links a {
+      color: rgb(246, 255, 0);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav .nav-links a:hover {
+      color: #ffd700;
+    }
+    .about-container {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding: 2rem;
+    }
+    .circular-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077cc;
+    }
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .profile-item {
+      text-align: center;
+      font-weight: bold;
+      color: #0077cc;
+    }
+    .profile-item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+    /* Sayfa içinde yumuşak scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Gold WATER</div>
+    <ul class="nav-links">
+      <li><a href="#anasayfa">Anasayfa</a></li>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#hizmetler">Özelliklerimiz</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <header id="anasayfa" class="hero-section">
+    <div class="hero-text">
+      <h1>Hoş Geldiniz</h1>
+      <p>Temiz Su için Doğru Adres.</p>
+      <button>Başlayın</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://futurizm.org/wp-content/uploads/2022/11/Foto2-scaled.jpg" alt= />
+    </div>
+  </header>
+
+  <section id="hakkimizda" class="about-us">
+    <div class="about-container">
+      <div class="circular-image">
+        <!-- Hakkımızda görseli düzgün url ile -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk313yQbnF45pK3qT524SQfxz4H9vU6qLsrg" alt="Ekibimiz" />
+      </div>
+      <div class="about-text">
+        <h2>Hakkımızda</h2>
+        <p>
+          Biz ileri teknoloji ve kullanıcı odaklı tasarım anlayışıyla, modern çözümler geliştiren bir ekibiz.
+          Misyonumuz, dijital dünyada fark yaratan işler üretmektir. Ekibimiz birlikte çalışarak en iyi deneyimi sunmaya odaklıdır.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hizmetler" class="features">
+    <h2>Özelliklerimiz</h2>
+    <p>Temiz, Güvenilir, Sağlıklı ve İçilebilir SU Globaldeki Tek SU.</p>
+    <div class="grid-container">
+      <div class="feature-item">
+        <img src="https://www.aiwater.co/wp-content/uploads/2020/08/watervisual-1024x1005.jpg" alt="Özellik 1" />
+      </div>
+      <div class="feature-item">
+        <img src="https://www.mataramasu.co/cdn/shop/articles/su-dongusu-nedir_1.jpg?v=1663915706&width=2048" alt="Özellik 2" />
+      </div>
+      <div class="feature-item">
+        <img src="https://i.guim.co.uk/img/media/9ebfe6eb392f208e944a21d1903b698965d35527/0_0_7360_4417/master/7360.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f178c7a96ca3d66184f2f62653df15e5" alt="Özellik 3" />
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div class="content-container">
+      <div class="content-image">
+        <img src="https://www.bareinternational.com/wp-content/uploads/2018/01/AdobeStock_169440748-1030x687.jpeg" alt= />
+      </div>
+      <div class="content-text">
+        <h2>İstasyonlarımız ve Çalışanlarımız</h2>
+        <p>
+          Temiz,Hijyenik ve ferah istasyonlarımız ve güleryüzlü çalışanlarımızla sizlere en iyi hizmeti sunuyoruz.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block reverse">
+    <div class="content-container">
+      <div class="content-text">
+        <h2>Sularımız</h2>
+        <p>
+          Temiz berrak suyumuz, doğanın en saf haliyle sizlere sunuluyor. Sağlıklı ve içilebilir suyun adresi.
+        </p>
+      </div>
+      <div class="content-image">
+        <img src="https://gwi-live-strapi-media-library.s3.eu-west-2.amazonaws.com/images/TOXSORB_Phosphate_Removal_SEO_Article_boy_drinking_water_pic_i_Stock_517703950_ba1f86c2f7.jpg" alt= />
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Takımımız</h2>
+    <h3>Yapay Zeka Destekli Ekibimiz</h3>
+    <div class="profile-grid">
+      <div class="profile-item">
+        <img src="https://robohash.org/alpha" alt="Robot Alpha" />
+        <p>Alpha-01</p>
+      </div>
+      <div class="profile-item">
+        <img src="https://robohash.org/beta" alt="Robot Beta" />
+        <p>Beta-77</p>
+      </div>
+      <div class="profile-item">
+        <img src="https://robohash.org/gamma" alt="Robot Gamma" />
+        <p>Gamma-X</p>
+      </div>
+      <div class="profile-item">
+        <img src="https://robohash.org/delta" alt="Robot Delta" />
+        <p>Delta-92</p>
+      </div>
+      <div class="profile-item">
+        <img src="https://robohash.org/omega" alt="Robot Omega" />
+        <p>Omega-9</p>
+      </div>
+      <div class="profile-item">
+        <img src="https://robohash.org/epsilon" alt="Robot Epsilon" />
+        <p>Epsilon-R</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diğer bölümler (Pricing, FAQ, Contact) ve footer -->
+
+  <section id="pricing" class="pricing-section">
+    <h2>Fiyatlandırma</h2>
+    <h3>İhtiyacınıza uygun planları seçin</h3>
+    <div class="card-container">
+      <div class="card">
+        <h2>Hayatta Kalmalık</h2>
+        <ul>
+          <li>Her aile üyesi için </li>
+          <li>Günlük kişi başı 2 şişe</li>
+          <li>1 litrelik şişeler</li>
+          <li>BEDAVA</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>İstediğin Zaman Su İç</h2>
+        <ul>
+          <li>Her Aile Üyesi İçin</li>
+          <li>Günlük Kişi başı 3 şişe</li>
+          <li>1 litrelik şişe</li>
+          <li>Sonraki 3 ay her hafta 5 litre hediye su</li>
+          <li>Aylık 2000 EURO</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Zenginsin Kanka</h2>
+        <ul>
+          <li>Her aile üyesi için </li>
+          <li>Günlük 5 şişe içme suyu</li>
+          <li>1 litrelik şişeler</li>
+          <li>İlk 3 Ay haftada 5 litre su</li>
+          <li>500 ml lik 5 tane hediyelik su (her 3 ayda bir yenilenir.)</li>
+          <li>Aylık 3000 EURO</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+<section class="faq-section">
+  <h2>Sıkça Sorulan Sorular</h2>
+  <h3>Merak ettiğiniz konuların cevapları</h3>
+  <div class="faq-container">
+
+    <details class="faq-item">
+      <summary>Üyeliğimi iptal edersem ne olur?</summary>
+      <p>İlk 20 gün iptal etmeniz durumunda paranızın güne oranı iade edilir son 10 günde ise para iadesi olmayacaktır.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Destek almak için nasıl iletişime geçebilirim?</summary>
+      <p>İletişim sayfamızdaki numarayı tuşlayarak yada e mailden bize ulaşabilirsiniz.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Şikayetlerimizi nereye bildireceğiz?</summary>
+      <p>E mail yoluyla yada istasyonlarımızdaki danışma bölümünden şikayetinizi söyleyebilirsiniz. .</p>
+    </details>
+
+  </div>
+</section>
+
+  
+            <section id="iletisim" class="contact-section">
+    <div class="contact-container" style="display:flex; gap:2rem; padding:2rem;">
+      <div class="contact-text" style="flex:1;">
+        <h3>Bize Ulaşın</h3>
+        <p>
+          Sorularınız veya işbirliği teklifiniz için bizimle iletişime geçmekten çekinmeyin.
+        </p>
+      </div>
+      <div class="contact-map" style="flex:1;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.2280618155793!2d35.49310921525958!3d38.73122997959485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152e78a472ca839b%3A0xbaa2d1db7d68fa04!2sKayseri!5e0!3m2!1str!2str!4v1691826753501!5m2!1str!2str"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0077cc; color:rgb(255, 234, 0); padding:1rem 2rem; text-align:center;">
+    <div class="footer-content">
+      <ul class="footer-links" style="list-style:none; padding:0; margin:0 0 1rem 0; display:flex; justify-content:center; gap:2rem;">
+        <li><a href="#anasayfa" style="color:rgb(247, 234, 0); text-decoration:none;">Anasayfa</a></li>
+        <li><a href="#hakkimizda" style="color:rgb(255, 238, 0); text-decoration:none;">Hakkımızda</a></li>
+        <li><a href="#hizmetler" style="color:rgb(254, 246, 0); text-decoration:none;">Hizmetler</a></li>
+        <li><a href="#iletisim" style="color:rgb(255, 242, 0); text-decoration:none;">İletişim</a></li>
+      </ul>
+      <p class="copyright">
+        &copy; 2025 Tüm hakları saklıdır.
+      </p>
+    </div>
+  </footer>
+
